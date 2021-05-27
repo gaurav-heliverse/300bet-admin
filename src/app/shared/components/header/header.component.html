@@ -1,0 +1,98 @@
+
+    <mat-toolbar class="shadow">
+        <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+       <div class="profile">
+           <div class="content">
+               <div class="names">
+                   <p>Gaurav kakran</p>
+                   <strong><p>Admin</p></strong>
+               </div>
+               <div class="photo">
+                   <img src="https://lh3.googleusercontent.com/proxy/M_JX_9wRiR8z0FrOkFvu1dBuMbrFsQEcjdhdr7vQNmFbd9tmer-PhzKFyEMny1pS5dgZSVCbkjuJj7l3de8uMkE3bRyUkBJwgL4fPGO39yJWX9X1agk0p6g" alt="">
+               </div>
+           </div>
+       </div>
+    </mat-toolbar>
+
+    <mat-drawer-container autosize>
+        <mat-drawer #drawer class="sidenav" mode="side">
+          <div class="menu-container">
+                <div class="menu active">
+                    <a routerLink="dashboard/games">
+                        <button mat-button>
+                            <mat-icon>sports_esports</mat-icon>
+                            <span>Games</span>
+                        </button>
+                    </a>
+                </div>
+                
+                <div class="menu">
+                    <button mat-button>
+                        <mat-icon>category</mat-icon>
+                        <span>Products</span>
+                    </button>
+                </div>
+
+                <div class="menu">
+                    <button mat-button>
+                        <mat-icon>web</mat-icon>
+                        <span>Category</span>
+                    </button>
+                </div>
+
+                <div class="menu">
+                    <button mat-button>
+                        <mat-icon>person</mat-icon>
+                        <span>Judges</span>
+                    </button>
+                </div>
+
+                <div class="menu">
+                    <button mat-button>
+                        <mat-icon>email</mat-icon>
+                        <span>Email Marketing</span>
+                    </button>
+                </div>
+
+                <div class="menu">
+                    <button mat-button>
+                        <mat-icon>grid_view</mat-icon>
+                        <span>Dashboard</span>
+                    </button>
+                </div>
+                <div class="menu">
+                    <button mat-button>
+                        <mat-icon>all_inbox</mat-icon>
+                        <span>Content</span>
+                    </button>
+                </div>
+                <div class="menu">
+                    <button mat-button>
+                        <mat-icon>login</mat-icon>
+                        <span>Logout</span>
+                    </button>
+                </div>
+
+                <div class="menu menu-setting">
+                    <button mat-button>
+                        <mat-icon>settings</mat-icon>
+                        <span>Settings</span>
+                    </button>
+                </div>
+          </div>
+        </mat-drawer>
+    
+    </mat-drawer-container>
+
+
+    <app-sidebar></app-sidebar>
+
+
+    <!-- Content Will be rander here of all childroute  of dashboard -->
+
+    <div class="content-container" style="padding: 100px;">
+       <router-outlet></router-outlet>
+    </div>
+     

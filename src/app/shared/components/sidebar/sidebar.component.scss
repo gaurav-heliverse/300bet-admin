@@ -1,0 +1,47 @@
+@import './../../../../../styles/general/variable';
+
+.sidenav-container{
+    // background-color: yellow;
+    margin-left: 0;
+    width: 5em;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 4em;
+    position: fixed;
+
+    
+
+    .menu-wrapper{
+        height: 100%;
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+
+        .menu{
+            margin: 7px 0;
+
+            button{
+                width: 100%;
+                text-align: center;
+
+                mat-icon{
+                    color: $icon-color;
+                }
+            }
+        }
+
+         .active{
+                background-color: #f2cddb;
+                mat-icon{
+                    color: $icon-active-color;
+                }
+            }
+            .menu:active{
+                background-color: #f2cddb;
+                mat-icon{
+                    color: $icon-active-color;
+                }
+            }
+    }
+}

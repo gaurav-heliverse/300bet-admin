@@ -1,0 +1,50 @@
+/* variables */
+$primary-color: #fc5252;
+$bg-color : rgba(255,176,176,1);
+$text-color: #3a3a3a;
+$white: white;
+$black: black;
+$list-gray: #646363;
+$primary-blue: #0090ff;
+$gray: #646464;
+$icon-color : #a04e4e;
+$icon-active-color : #c21c5c;
+
+$bg-gray: #f2f4f6;
+$shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+
+$dark-blue: #010640;
+$light-blue: #202B67;
+$border-color: rgba(0, 0, 0, 0.125);
+$red-color: #ee3f3f;
+$yellow-color: #ffc107;
+$star-yellow: #fdc719;
+$footer-bg: #1a1a1a;
+$badge: #ffe799;
+
+$btn-hover-color : #bd2130;
+
+$mobile: 576px;
+$tablet: 768px;
+$small-desktop: 992px;
+$desktop: 1200px;
+
+.text-mute {
+  color: $text-color;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+@mixin transition($transition) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
