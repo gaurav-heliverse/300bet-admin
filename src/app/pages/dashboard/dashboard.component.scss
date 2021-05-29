@@ -1,0 +1,13 @@
+@import './../../../../styles/general/variable';
+
+@media only screen and(min-width : $mobile){
+    .child-container{
+        padding : 90px 35px 0px 110px;
+    }
+}
+
+@media only screen and(max-width:$mobile){
+    .child-container{
+        padding : 85px 10px 0px 90px;
+    }
+}

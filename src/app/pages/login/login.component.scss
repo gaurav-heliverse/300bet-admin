@@ -65,15 +65,23 @@
                    width: 100%;
                 }
 
+                mat-form-field{
+
+                    input{
+                        box-sizing: border-box;
+                        padding-right: 10px;
+                    }
+                    .icon{
+                        cursor: pointer;
+                    }
+                }
                 .login-btn{
                     border-radius: 30px;
                 }
-
                 .pass-forget{
                     margin-top: 0.9em;
                     p{
                         color: $gray;
-
                         a{
                             text-decoration: none;
                             color:$list-gray;
@@ -95,7 +103,4 @@
             }
         }
     }
-
-
-
 }

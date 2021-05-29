@@ -1,3 +1,61 @@
+<!-- <div class="dashboard__container" *ngIf="true">
+    <mat-toolbar class="toolbar">
+      <div class="toolbar__header">
+        <div class="toolbar__header__left">
+          <button mat-button class="toggle-menu-btn" (click)="opened = !opened">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+        
+        <div class="toolbar__header__right">
+          <div class="toolbar__header__right__user-info">
+            <p>John Doe</p>
+            <h3>Admin</h3>
+          </div>
+          <div class="toolbar__header__right__user-img">
+            <mat-icon>account_circle</mat-icon>
+          </div>
+        </div>
+      </div>
+    </mat-toolbar>
+  
+    <mat-sidenav-container class="sidenav-container" hasBackdrop="false" autosize>
+      <mat-sidenav
+        #snav
+        mode="side"
+        opened="true"
+        id="navigation"
+        position="start"
+      >
+        <mat-nav-list>
+          <div class="menu_wrapper">
+            <button
+              mat-button
+              class="menu"
+              *ngFor="let menu of menuItems"
+              [routerLink]="[menu.path]"
+              routerLinkActive="active-menu"
+            >
+              <mat-icon>{{ menu.icon }}</mat-icon>
+              <span
+                class="menu--text"
+                *ngIf="opened"
+                [ngClass]="{ 'menu-slide': !!opened }"
+                >{{ menu.name }}
+              </span>
+            </button>
+          </div>
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content class="sidenav-container">
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+   -->
+
 <app-header></app-header>
-<!-- <h1>Dashboard</h1>
-<router-outlet></router-outlet> -->
+<div class="child-container">
+    <router-outlet></router-outlet>
+</div>

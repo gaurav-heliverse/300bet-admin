@@ -1,17 +1,18 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 login-col col1">
-            <img src="https://lh3.googleusercontent.com/proxy/7D-btN0FMcmskVSfro-jxf4wSDRAtLelOctcA_Bk0ZpCp1DfVpu214yOSardNGiRD-qV-ZelKwkddXDHkA" alt="">
+            <img src="./../../../assets/images/login-img.png" alt="">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 login-col col2">
             <h1 class="bold-heading">Admin Login</h1>
-            <form>
+            <form [formGroup]='loginForm' (ngSubmit)="onSubmit()">
                    <p>
                     <mat-form-field>
-                        <mat-label>Enter your mail</mat-label>
+                        <mat-label>Enter your email</mat-label>
                         <mat-icon matPrefix>email</mat-icon>
-                        <input matInput>
-                        <mat-hint>Hint</mat-hint>
+                        <input type="email" matInput formControlName="email">
+                        <mat-error *ngIf="loginForm.get('email').hasError('required')">Email required *</mat-error>
+                        <mat-error *ngIf="loginForm.get('email').invalid && !loginForm.get('email').hasError('required')">Invalid email *</mat-error>
                       </mat-form-field>
                    </p>
 
@@ -19,12 +20,14 @@
                     <mat-form-field>
                         <mat-label>Enter your password</mat-label>
                         <mat-icon matPrefix>lock</mat-icon>
-                        <input matInput>
-                        <mat-hint>Hint</mat-hint>
+                        <input #pass type="password" matInput formControlName="password">
+                        <mat-icon class="icon" *ngIf="!passVisible" (click)="showPassword(pass)" matSuffix>visibility</mat-icon>
+                        <mat-icon class="icon" *ngIf="passVisible" (click)="hidePassword(pass)" matSuffix>visibility_off</mat-icon>
+                        <mat-error>Password required *</mat-error>
                       </mat-form-field>
                    </p>
 
-                   <button mat-raised-button class="login-btn mt-4">LOGIN</button>
+                   <button [disabled]="!loginForm.valid" type="submit" mat-raised-button class="login-btn mt-4">LOGIN</button>
                    <div class="pass-forget">
                         <p>Forget <a href="">Username / Password ?</a></p>
                    </div>

@@ -1,55 +1,56 @@
 <div class="container sidenav-container shadow">
     <div class="menu-wrapper">
-        <div class="menu active">
+        <a class="menu" routerLink="/dashboard/games" routerLinkActive="active">
             <button mat-button>
                 <mat-icon>sports_esports</mat-icon>
             </button>
-        </div>
-        
-        <div class="menu">
+        </a>
+    
+    <a class="menu" routerLink="/dashboard/products" routerLinkActive="active">
             <button mat-button>
                 <mat-icon>category</mat-icon>
-            </button>
-        </div>
+            </button>                    
+    </a>
 
-        <div class="menu">
+    <a class="menu" routerLink="/dashboard/category" routerLinkActive="active">
             <button mat-button>
                 <mat-icon>web</mat-icon>
             </button>
-        </div>
+    </a>
 
-        <div class="menu">
+    <a class="menu" routerLink="/dashboard/judges" routerLinkActive="active">
             <button mat-button>
                 <mat-icon>person</mat-icon>
             </button>
-        </div>
+    </a>
 
-        <div class="menu">
+    <a class="menu" routerLink="/dashboard/emailmarketing" routerLinkActive="active">
             <button mat-button>
                 <mat-icon>email</mat-icon>
             </button>
-        </div>
+    </a>
 
-        <div class="menu">
+    <a class="menu" routerLink="/dashboard/dash_board" routerLinkActive="active">
             <button mat-button>
                 <mat-icon>grid_view</mat-icon>
             </button>
-        </div>
-        <div class="menu">
-            <button mat-button>
-                <mat-icon>all_inbox</mat-icon>
-            </button>
-        </div>
-        <div class="menu">
-            <button mat-button>
-                <mat-icon>login</mat-icon>
-            </button>
-        </div>
+    </a>
+    <a class="menu" routerLink="/dashboard/content" routerLinkActive="active">
+        <button mat-button>
+            <mat-icon>all_inbox</mat-icon>
+        </button>
+    </a>
 
-        <div class="menu menu-setting">
-            <button mat-button>
-                <mat-icon>settings</mat-icon>
-            </button>
-        </div>
+    <a class="menu" routerLink="/logout" routerLinkActive="active">
+        <button mat-button>
+            <mat-icon>login</mat-icon>
+        </button>
+    </a>
+
+    <a class="menu menu-setting" routerLink="/dashboard/settings" routerLinkActive="active">
+        <button mat-button>
+            <mat-icon>settings</mat-icon>
+        </button>
+    </a>
   </div>
 </div>

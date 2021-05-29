@@ -45,3 +45,12 @@ $background-color : '#21094e';
 html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+
+.mat-tab-label-container{
+
+
+  .mat-tab-list{
+    transform: translateX(25%);
+  }
+}

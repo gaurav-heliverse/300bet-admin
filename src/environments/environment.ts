@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: "http://ec2-18-130-202-86.eu-west-2.compute.amazonaws.com:8000/",
+  AWS_ACCESS_KEY_ID: 'AKIAJIRHOOX62I5DGFTA',
+  AWS_SECREAT_ACCESS_KEY: '3IIx2z2j6624hIvtV0FVd3zlTD8xSR/MB76ps3GW',
+  AWS_REGION: 'eu-west-2',
+  BUCKET_NAME: '300bet'
 };
 
 /*
